@@ -1,36 +1,3 @@
-// gsap.registerPlugin(ScrollTrigger);
-
-// ScrollTrigger.normalizeScroll(true)
-
-// // create the smooth scroller FIRST!
-// let ScrollSmoother = ScrollScrollSmoother.create({
-//   smooth: 2,
-//   effects: true,
-//   normalizeScroll: false
-// });
-
-// // pin box-c when it reaches the center of the viewport, for 300px
-// ScrollTrigger.create({
-//   trigger: "",
-//   pin: true,
-//   start: "center center",
-//   end: "+=300",
-//   markers: true
-// });
-
-// document.querySelector("button").addEventListener("click", e => {
-//   // scroll to the spot where .box-c is in the center.
-//   // parameters: element, smooth, position
-//   ScrollSmoother.scrollTo("", true, "center center");
-
-// //   or you could animate the scrollTop:
-//   gsap.to(ScrollSmoother, {
-//    scrollTop: ScrollSmoother.offset(".box-c", "center center"),
-//    duration: 1
-//   });
-// });
-
-
 gsap.to(".navbar", {
     top : "0%",
     opacity: 1,
@@ -49,8 +16,6 @@ gsap.to(".right-col", {
     duration: 1,
     opacity:1
 })
-
-
 
 // Header box
 var box1 = document.querySelector(".box-1")
@@ -100,3 +65,23 @@ box3.addEventListener("mouseleave", () => {
     });
     rotate3.style.transform = `rotate(${90}deg)`;
 })
+
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+ScrollTrigger.normalizeScroll(true)
+
+// create the smooth scroller FIRST!
+let ScrollSmoother = ScrollSmoother.create({
+  smooth: 2,
+  effects: true,
+  normalizeScroll: false
+});
+
+// pin box-c when it reaches the center of the viewport, for 300px
+ScrollTrigger.create({
+  trigger: "#skills",
+  start: "center center",
+  end: "+=300",
+  markers: true
+});

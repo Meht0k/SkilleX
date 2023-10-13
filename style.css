@@ -37,17 +37,13 @@ body {
     opacity: 0;
 }
 
-.nav-item {
-    position: relative;
-}
-
-.navbar-brand {
-    font-size: 1.8rem;
-    font-weight: 500;
-}
 
 .logo {
     position: relative;
+}
+.logo a{
+    font-weight: 500;
+    font-size: 1.5rem;
 }
 
 .navbar-brand::before {
@@ -64,6 +60,7 @@ body {
 
 .nav-link {
     font-weight: 500;
+    position: relative;
 }
 
 .nav-link::before {
@@ -82,8 +79,9 @@ body {
 .nav-link:hover::before {
     opacity: 1;
     bottom: 0;
-    width: 90%;
+    width: 100%;
 }
+
 
 
 /*------------------------------------- header -------------------------------------*/
@@ -177,6 +175,7 @@ body {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("https://assets.website-files.com/617fa48948c7ab24b715140e/6183bce7320d030e82c15028_hero_person-1.webp");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     cursor: pointer;
 }
 
@@ -453,11 +452,13 @@ body {
     border-radius: 50%;
     background: var(--2-color);
 }
-.left-inner{
+
+.left-inner {
     height: 70px;
     width: 100%;
 }
-.icons{
+
+.icons {
     height: 60px;
     width: 70px;
     border-radius: 50%;
@@ -467,7 +468,8 @@ body {
     font-size: 1.5rem;
     position: relative;
 }
-.icons-1::before{
+
+.icons-1::before {
     content: '';
     height: 70px;
     width: 1px;
@@ -475,7 +477,8 @@ body {
     position: absolute;
     top: 90px;
 }
-.icons-2::before{
+
+.icons-2::before {
     content: '';
     height: 70px;
     width: 1px;
@@ -483,26 +486,31 @@ body {
     position: absolute;
     top: 90px;
 }
-.icons-1 i{
+
+.icons-1 i {
     color: orangered;
-} 
-.icons-3 i{ 
+}
+
+.icons-3 i {
     color: rgb(21, 21, 68);
 }
-.icons-3 i{
+
+.icons-3 i {
     color: rgb(140, 0, 255);
 }
 
 
 /*------------------------------------------ Skills -----------------------------------------------*/
-#test{
-    height: 80vh !important;
+#test {
+    /* height: 80vh !important; */
     width: 100%;
 }
-.carousel-text{
+
+.carousel-text {
     position: relative;
 }
-.carousel-text::after{
+
+.carousel-text::after {
     content: '';
     height: 5px;
     width: 5px;
@@ -511,12 +519,130 @@ body {
     bottom: 8px;
 }
 
-.test-boxes{
+.test-boxes {
     display: flex;
     gap: .5rem;
 }
-.test-box-inner{
+
+.test-box-inner {
     height: 400px;
     width: 400px !important;
     background: var(--2-color);
+}
+
+.carousel {
+    position: relative;
+}
+.card-body-2{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.test-img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.test-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.test-content{
+    height: 70px;
+    width: 100%;
+}
+
+
+/*------------------------------------------ Footer -----------------------------------------------*/
+#footer {
+    height: 30vh;
+    width: 100%;
+    /* background: #1e1e2f; */
+}
+
+.footer-brand::after {
+    content: '';
+    height: 5px;
+    width: 5px;
+    background: var(--1-color) !important;
+    position: absolute;
+    bottom: 12px;
+    left: 100px;
+}
+
+.footer-brand {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.footer-link {
+    position: relative;
+}
+
+.footer-link::before {
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: var(--1-color);
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .3s linear;
+    opacity: 0;
+}
+
+.footer-link:hover::before {
+    opacity: 1;
+    bottom: -8px;
+    width: 100%;
+}
+
+.form-in {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.form-in input {
+    width: 100%;
+}
+
+
+.footer-btn {
+    position: relative;
+    z-index: 1;
+}
+
+.footer-btn::after {
+    transition: all .3s linear;
+    z-index: -1;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgb(233, 146, 105);
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+}
+
+.footer-btn:hover::after {
+    bottom: 0;
+}
+
+.footer-icons i {
+    height: 80px;
+    width: 80px;
+    border: .1px solid rgb(184, 184, 184);
+    border-radius: 50%;
+    transition: all .3s linear;
+}
+
+.footer-icons i:hover {
+    color: var(--2-color) !important;
+    border: .1px solid #1e1e2f;
+    background: #1e1e2f;
+
 }

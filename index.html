@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" style="scroll-behavior: smooth;">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -40,11 +40,11 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                                 <li class="nav-item mx-2"><a class="nav-link px-0 mx-2 active" aria-current="page"
-                                        href="#">Find
-                                        Passion</a></li>
-                                <li class="nav-item mx-2"><a class="nav-link px-0 mx-2" href="#">Categories</a></li>
-                                <li class="nav-item mx-2"><a class="nav-link px-0 mx-2" href="#">Skills</a></li>
-                                <li class="nav-item mx-2"><a class="nav-link px-0 mx-2" href="#">Customer</a></li>
+                                        href="#header">Find Passion</a></li>
+                                <li class="nav-item mx-2"><a class="nav-link px-0 mx-2" href="#feature">Categories</a>
+                                </li>
+                                <li class="nav-item mx-2"><a class="nav-link px-0 mx-2" href="#skills">Skills</a></li>
+                                <li class="nav-item mx-2"><a class="nav-link px-0 mx-2" href="#test">Customer</a></li>
                             </ul>
                             <form class="d-flex" role="search">
                                 <button type="button" class="border-0 bg-transparent "><a href="#"
@@ -218,7 +218,7 @@
 
 
     <!------------------------------------------ Skills ------------------------------------------------->
-    <div class="container py-5" id="skills">
+    <div class="container py-5" data-speed="clamp(.5)" id="skills">
         <div class="row py-5">
             <div class="col">
                 <h5 class="text-black text-start display-6 skills-col-1 fw-medium">Get the skills you need for a job
@@ -295,36 +295,164 @@
 
 
 
-    <!------------------------------------------ Skills ------------------------------------------------->
-    <div class="container-fluid py-5" id="test">
+    <!------------------------------------------ Test ------------------------------------------------->
+    <div class="container py-5" id="test">
         <div class="row pb-5">
             <div class="col">
                 <p class="text-black text-center display-5 fw-medium carousel-text">What our customer say</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row pt-5">
             <div class="col">
-                <div class="test-boxes">
-                    <div class="test-box-inner test-box-1"></div>
-                    <div class="test-box-inner test-box-2"></div>
-                    <div class="test-box-inner test-box-3"></div>
-                    <div class="test-box-inner test-box-4"></div>
-                    <div class="test-box-inner test-box-5"></div>
-                    <div class="test-box-inner test-box-6"></div>
-                    <div class="test-box-inner test-box-7"></div>
+                <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card border-0 rounded-4 p-4">
+                                        <div class="card-body p-0">
+                                            <p class="card-text">The explanations are clear, the teachers are responsible and friendly, and the homework is real practice.</p>
+                                        </div>
+                                        <div class="card-body-2 mt-3">
+                                            <div class="test-img">
+                                                <img src="https://assets.website-files.com/617fa48948c7ab24b715140e/617fa55023c6a906cc955301_customers_ava-02.webp" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="test-content mt-3">
+                                                <h6 class="text-secondary fw-bold fs-6">Rob Zuber</h6>
+                                                <p class="fw-medium" style="color: #97c680; font-size: .8rem;">CEO</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card border-0 rounded-4 p-4">
+                                        <div class="card-body p-0">
+                                            <p class="card-text">I learned a lot of new things, I immediately apply my knowledge in my work, found myself a new client.</p>
+                                        </div>
+                                        <div class="card-body-2 mt-3">
+                                            <div class="test-img">
+                                                <img src="https://assets.website-files.com/617fa48948c7ab24b715140e/617fa55053e4ac52b532b18d_customers_ava-03.webp" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="test-content mt-3">
+                                                <h6 class="text-secondary fw-bold fs-6">Melanle  pickett</h6>
+                                                <p class="fw-medium" style="color: #97c680; font-size: .8rem;">IT Manager</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card border-0 rounded-4 p-4">
+                                        <div class="card-body p-0">
+                                            <p class="card-text">I really like the speakers of the course and the quality of the lectures. There is always feedback.</p>
+                                        </div>
+                                        <div class="card-body-2 mt-3">
+                                            <div class="test-img">
+                                                <img src="https://assets.website-files.com/617fa48948c7ab24b715140e/617fa55026a5a46ec6f5139a_customers_ava-01.webp" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="test-content mt-3">
+                                                <h6 class="text-secondary fw-bold fs-6">Regis Wilson</h6>
+                                                <p class="fw-medium" style="color: #97c680; font-size: .8rem;">Engineer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card border-0 rounded-4 p-4">
+                                        <div class="card-body p-0">
+                                            <p class="card-text">A new profession is a lot of vivid impressions. Today I was at the presentation of the regional business award.</p>
+                                        </div>
+                                        <div class="card-body-2 mt-3">
+                                            <div class="test-img">
+                                                <img src="https://assets.website-files.com/617fa48948c7ab24b715140e/617fa5505753cbf8234cf4a7_customers_ava-04.webp" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="test-content mt-3">
+                                                <h6 class="text-secondary fw-bold fs-6">Emma Watson</h6>
+                                                <p class="fw-medium" style="color: #97c680; font-size: .8rem;">Cook</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card border-0 rounded-4 p-4">
+                                        <div class="card-body p-0">
+                                            <p class="card-text">The course shows all the stages of the work of an SMM marketer. And also excellent practice.</p>
+                                        </div>
+                                        <div class="card-body-2 mt-3">
+                                            <div class="test-img">
+                                                <img src="https://assets.website-files.com/617fa48948c7ab24b715140e/617fa55023c6a94575955300_customers_ava-05.webp" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="test-content mt-3">
+                                                <h6 class="text-secondary fw-bold fs-6">Chris Evans</h6>
+                                                <p class="fw-medium" style="color: #97c680; font-size: .8rem;">Software Developer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card border-0 rounded-4 p-4">
+                                        <div class="card-body p-0">
+                                            <p class="card-text">On the course "Data Analyst in Python" everything is very interesting and informative, very detailed material.</p>
+                                        </div>
+                                        <div class="card-body-2 mt-3">
+                                            <div class="test-img">
+                                                <img src="https://assets.website-files.com/617fa48948c7ab24b715140e/6182b50b8835e6b322cd154f_customers_ava-06.webp" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="test-content mt-3">
+                                                <h6 class="text-secondary fw-bold fs-6">Chris Hemsworth</h6>
+                                                <p class="fw-medium" style="color: #97c680; font-size: .8rem;">Analyst</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card border-0 rounded-4 p-4">
+                                        <div class="card-body p-0">
+                                            <p class="card-text">For several months I studied one of the most popular programming languages on the course "Java developer"</p>
+                                        </div>
+                                        <div class="card-body-2 mt-3">
+                                            <div class="test-img">
+                                                <img src="https://assets.website-files.com/617fa48948c7ab24b715140e/6182b50da69cb84dd035ae26_customers_ava-07.webp" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="test-content mt-3">
+                                                <h6 class="text-secondary fw-bold fs-6">Elizabeth Stone</h6>
+                                                <p class="fw-medium" style="color: #97c680; font-size: .8rem;">Developer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card border-0 rounded-4 p-4">
+                                        <div class="card-body p-0">
+                                            <p class="card-text">For several months I studied one of the most popular programming languages on the course "Java developer".</p>
+                                        </div>
+                                        <div class="card-body-2 mt-3">
+                                            <div class="test-img">
+                                                <img src="https://assets.website-files.com/617fa48948c7ab24b715140e/617fa55023c6a906cc955301_customers_ava-02.webp  " class="img-fluid" alt="">
+                                            </div>
+                                            <div class="test-content mt-3">
+                                                <h6 class="text-secondary fw-bold fs-6">Mark Quine</h6>
+                                                <p class="fw-medium" style="color: #97c680; font-size: .8rem;">Web Developer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               
                 </div>
             </div>
         </div>
-        <div class="row pt-5">
-            <div class="col">
-                <div class="test-btn text-center">
-                    <a href="#" class="btn">
-                        <i class="bi bi-arrow-left-short fs-3"></i>
-                    </a>
-                    <a href="#" class="btn">
-                        <i class="bi bi-arrow-right-short fs-3"></i>
-                    </a>
-                </div>
+        <div class="row py-5">
+            <div class="col text-center">
+                <i class="bi bi-arrow-left text-secondary mx-3 fs-4" type="button" data-bs-target="#carouselExampleRide"
+                    data-bs-slide="prev"></i>
+                <i class="bi bi-arrow-right text-secondary mx-3 fs-4" type="button" data-bs-target="#carouselExampleRide"
+                    data-bs-slide="next"></i>
             </div>
         </div>
     </div>
@@ -334,7 +462,60 @@
 
 
 
+    <!------------------------------------------ Footer ------------------------------------------------->
 
+    <div class="container" id="footer">
+        <div class="row py-5 border-bottom ">
+            <div class="col">
+                <div class="logo">
+                    <a class="footer-brand text-black text-decoration-none" href="#">SkilleX</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row pt-2">
+                    <div class="col px-3">
+                        <a href="#header" class="text-secondary text-decoration-none footer-link">Find passion</a>
+                    </div>
+                    <div class="col px-3">
+                        <a href="#feature" class="text-secondary text-decoration-none footer-link">Categories</a>
+                    </div>
+                </div>
+                <div class="row pt-4 pb-2">
+                    <div class="col px-3">
+                        <a href="#skills" class="text-secondary text-decoration-none footer-link">Skills</a>
+                    </div>
+                    <div class="col px-3">
+                        <a href="#test" class="text-secondary text-decoration-none footer-link">Customer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="footer-form pb-2">
+                    <h5 class="text-black fs-5 text-secondary pt-2">Join our community</h5>
+                    <div class="form-in">
+                        <input type="text" class="form-control border-0 shadow-none py-4 rounded-0"
+                            placeholder="Find your passion">
+                        <a href="#" class="btn border-0 shadow-none py-4 rounded-0 px-4 fs-4 fw-bold footer-btn"
+                            style="background-color: #97c680;">Go</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row py-3 align-items-center">
+            <div class="col text-start d-flex align-items-center">
+                <img src="https://assets.website-files.com/617fa48948c7ab24b715140e/619f7e9a1cc6db8ecfc33794_logo-copyright.svg"
+                    alt="">
+                <p class="pt-3 px-3 fw-bold text-black">2021 Halo Lab. All rights reserved</p>
+            </div>
+            <div class="col text-end footer-icons">
+                <a href="#" class="btn"><i class="bi bi-behance p-2"></i></a>
+                <a href="#" class="btn"><i class="bi bi-facebook p-2"></i></a>
+                <a href="#" class="btn"><i class="bi bi-instagram p-2"></i></a>
+                <a href="#" class="btn"><i class="bi bi-dribbble p-2"></i></a>
+                <a href="#" class="btn"><i class="bi bi-linkedin p-2"></i></a>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -362,6 +543,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
 
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Jquery CDN Link  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <!-- Custom Css Link  -->
     <script src="script.js"></script>
